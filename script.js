@@ -10,16 +10,15 @@ let x = 50, y = 50;
 let w = 10, h = 50;
 
 function draw() {
-//   // Code here runs continuously
-//   background(220);
+  // Code here runs continuously
+  background(220);
 
-//   // ellipse(x++ % 200,
-//   //         y++ % 200,
-//   //         (10 + (w++ % 40)),
-//   //         (50 - (h++ % 40)))
+  // ellipse(x++ % 200,
+  //         y++ % 200,
+  //         (10 + (w++ % 40)),
+  //         (50 - (h++ % 40)))
   
-//   ellipse(10, 10, 10, 10);
-//   // drawOlympicRings(0, 0, 50);
+  drawOlympicRings(0, 0, 70);
 }
 
 /**
