@@ -115,4 +115,4 @@ function draw() {
    some stuff that is not in this file, so don't warn us that it doesn't
    exist. */
 
-/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill, arc, heart */
+/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill, arc */
