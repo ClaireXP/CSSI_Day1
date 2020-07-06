@@ -53,7 +53,7 @@ function draw() {
   arc(100+w+3*i,50+w,50,50, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
   
   
-  //Logo
+  //Linux Logo
   strokeWeight(1);
   
   stroke("#000000");
@@ -64,18 +64,36 @@ function draw() {
   //Head base
   ellipse(200, 190, 100, 80);
   
+  //Wings
+  ellipse(102, 322, 8, 60);
+  ellipse(298, 322, 8, 60);
+  
   
   stroke("#FFFFFF");
   fill("#FFFFFF");
   //White part of body
   ellipse(200, 310, 160, 190);
   
+  //Eyes
+  ellipse(185, 187, 27, 35);
+  ellipse(215, 187, 27, 35);
+  
+  //Pupils
+  stroke("#000000");
+  fill("#000000");
+  ellipse(189, 187, 10, 15);
+  ellipse(211, 187, 10, 15);
+  
   
   stroke("#ffd633");
   fill("#ffd633");
   //Feet
-  ellipse(155, 390, 80, 20);
-  ellipse(245, 400, 80, 20);
+  ellipse(155, 385, 80, 20);
+  ellipse(245, 385, 80, 20);
+  
+  //Beak
+  ellipse(200, 210, 45, 20);
+  ellipse(200, 205, 25, 20);
 }
 
 
