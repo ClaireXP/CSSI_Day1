@@ -10,7 +10,9 @@ function draw() {
   background("white");
 
   //Olympic Rings
-  var w = 7;
+  var w = 7; //Alters the scaling
+  var x = 75; //Sets x position
+  var y = 25; //Sets y position
   var i = 4.5*w/5;
   var r = w*10;
 
@@ -19,39 +21,39 @@ function draw() {
 
   //Blue ring
   stroke("#1aa3ff");
-  ellipse(r/2+w, r/2+w, r, r);
+  ellipse(r/2+w+x, r/2+w+y, r, r);
 
   //Yellow ring
   stroke("#ffc61a");
-  ellipse(r+w+i, r+w, r, r);
+  ellipse(r+w+i+x, r+w+y, r, r);
 
   //Blue arc
   stroke("#1aa3ff");
-  arc(r/2+w, r/2+w, r, r, PI + HALF_PI, QUARTER_PI);
+  arc(r/2+w+x, r/2+w+y, r, r, PI + HALF_PI, QUARTER_PI);
 
   //Black ring
   stroke("#000000");
-  ellipse(3*r/2+w+2*i, r/2+w, r, r);
+  ellipse(3*r/2+w+2*i+x, r/2+w+y, r, r);
 
   //Yellow arc
   stroke("#ffc61a");
-  arc(r+w+i, r+w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
+  arc(r+w+i+x, r+w+y, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
 
   //Green ring
   stroke("#00b300");
-  ellipse(2*r+w+3*i, r+w, r, r);
+  ellipse(2*r+w+3*i+x, r+w+y, r, r);
 
   //Black arc
   stroke("#000000");
-  arc(3*r/2+w+2*i, r/2+w, r, r, PI + HALF_PI, QUARTER_PI);
+  arc(3*r/2+w+2*i+x, r/2+w+y, r, r, PI + HALF_PI, QUARTER_PI);
 
   //Red ring
   stroke("#ff4d4d");
-  ellipse(5*r/2+w+4 * i, r/2+w, r, r);
+  ellipse(5*r/2+w+4*i+x, r/2+w+y, r, r);
 
   //Green arc
   stroke("#00b300");
-  arc(2*r+w+3*i, r+w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
+  arc(2*r+w+3*i+x, r+w+y, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
 
   
   
@@ -69,6 +71,10 @@ function draw() {
   //Wings
   ellipse(102, 322, 8, 60);
   ellipse(298, 322, 8, 60);
+  
+  //Text
+  textSize(32);
+  text("Linux", 165, 435);
 
   stroke("#FFFFFF");
   fill("#FFFFFF");
