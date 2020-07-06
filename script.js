@@ -10,10 +10,6 @@ function draw() {
   // Code here runs continuously
   background("#33cccc");
   
-  stroke("yellow");
-  fill("yellow");
-  ellipse(100, 100, 50, 50);
-  
   //Sky blue color
   stroke("#5cd65c");
   fill("#5cd65c");
@@ -21,8 +17,18 @@ function draw() {
   
   stroke("black");
   fill("black");
+  //Body
   ellipse(400, 360, 60, 100);
-  rect(20, 20, 20, 20);
+  ellipse(400, 300, 50, 50);
+  //Eyes
+  
+  stroke("white");
+  fill("white");
+  //White on body
+  ellipse(400, 350, 35, 80);
+  ellipse(400, 305, 40, 40);
+  //White in eyes
+  */
 }
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
