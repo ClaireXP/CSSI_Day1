@@ -1,3 +1,55 @@
+// Content behind double slashes is a comment.
+
+
+
+
+
+
+
+
+
+// Scroll down to see a sample solution.
+
+
+
+
+
+
+
+
+
+// Solutions are usually available for exercises and are
+// there as a resource to you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// global createCanvas
+
 function setup() {
   createCanvas(400, 400);
 }
