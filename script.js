@@ -3,13 +3,14 @@
 
 function setup() {
   // Code here runs only once
-  createCanvas(600, 200);
+  createCanvas(800, 600);
 }
 
 function draw() {
   background("white");
   
-  var w = 6;
+  //Olympic Rings
+  var w = 5;
   var i = 4.5;
   
   noFill();
@@ -39,9 +40,33 @@ function draw() {
   stroke("#00b300");
   ellipse(100+w+3*i,50+w,50,50);
   
+  //Black arc
+  stroke("#000000");
+  arc(75+w+2*i,25+w,50,50, PI+HALF_PI, QUARTER_PI);
+  
   //Red ring
   stroke("#ff4d4d");
   ellipse(125+w+4*i,25+w,50,50);
+  
+  //Green arc
+  stroke("#00b300");
+  arc(100+w+3*i,50+w,50,50, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
+  
+  
+  //Logo
+  var c = "#000000";
+  w = 1;
+  strokeWeight(1);
+  stroke(c);
+  fill(c);
+  
+  rect(15, 150, 150, 150);
+}
+
+function update(){
+  strokeWeight(1);
+  stroke(c);
+  fill(c);
 }
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
