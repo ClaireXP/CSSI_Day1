@@ -10,49 +10,51 @@ function draw() {
   background("white");
 
   //Olympic Rings
-  var w = 5;
-  var i = 4.5;
-  var r = 50;
+  var w = 7;
+  var i = 4.5*w/5;
+  var r = w*10;
 
   noFill();
   strokeWeight(w);
 
   //Blue ring
   stroke("#1aa3ff");
-  ellipse(25+w, 25+w, r, r);
+  ellipse(r/2+w, r/2+w, r, r);
 
   //Yellow ring
   stroke("#ffc61a");
-  ellipse(50 + w + i, 50 + w, r, r);
+  ellipse(r+w+i, r+w, r, r);
 
   //Blue arc
   stroke("#1aa3ff");
-  arc(25 + w, 25 + w, r, r, PI + HALF_PI, QUARTER_PI);
+  arc(r/2+w, r/2+w, r, r, PI + HALF_PI, QUARTER_PI);
 
   //Black ring
   stroke("#000000");
-  ellipse(75 + w + 2 * i, 25 + w, r, r);
+  ellipse(3*r/2+w+2*i, r/2+w, r, r);
 
   //Yellow arc
   stroke("#ffc61a");
-  arc(50 + w + i, 50 + w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
+  arc(r+w+i, r+w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
 
   //Green ring
   stroke("#00b300");
-  ellipse(100 + w + 3 * i, 50 + w, r, r);
+  ellipse(2*r+w+3*i, r+w, r, r);
 
   //Black arc
   stroke("#000000");
-  arc(75 + w + 2 * i, 25 + w, r, r, PI + HALF_PI, QUARTER_PI);
+  arc(3*r/2+w+2*i, r/2+w, r, r, PI + HALF_PI, QUARTER_PI);
 
   //Red ring
   stroke("#ff4d4d");
-  ellipse(125 + w + 4 * i, 25 + w, r, r);
+  ellipse(5*r/2+w+4 * i, r/2+w, r, r);
 
   //Green arc
   stroke("#00b300");
-  arc(100+w+3*i, 50 +w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
+  arc(2*r+w+3*i, r+w, r, r, PI + HALF_PI, PI + HALF_PI + QUARTER_PI);
 
+  
+  
   //Linux Logo
   strokeWeight(1);
 
