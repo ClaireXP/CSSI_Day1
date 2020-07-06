@@ -10,25 +10,38 @@ function draw() {
   background("white");
   
   var w = 6;
-  var i = 2;
+  var i = 4.5;
   
   noFill();
   strokeWeight(w);
   
+  //Blue ring
   stroke("#1aa3ff");
-  ellipse(25+w+i,25+w,50,50);
+  ellipse(25+w,25+w,50,50);
   
+  //Yellow ring
   stroke("#ffc61a");
   ellipse(50+w+i,50+w,50,50);
   
-  stroke("black");
-  ellipse(75+w+i,25+w,50,50);
+  //Blue arc
+  stroke("#1aa3ff");
+  arc(25+w,25+w,50,50, PI+HALF_PI, QUARTER_PI);
   
-  stroke("#ffc61a");
-  ellipse(100+w,50+w,50,50);
+  //Black ring
+  stroke("#000000");
+  ellipse(75+w+2*i,25+w,50,50);
   
+  //Yellow arc
   stroke("#ffc61a");
-  ellipse(125+w,25+w,50,50);
+  arc(50+w+i,50+w,50,50, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
+  
+  //Green ring
+  stroke("#00b300");
+  ellipse(100+w+3*i,50+w,50,50);
+  
+  //Red ring
+  stroke("#ff4d4d");
+  ellipse(125+w+4*i,25+w,50,50);
 }
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
@@ -38,4 +51,4 @@ function draw() {
    some stuff that is not in this file, so don't warn us that it doesn't
    exist. */
 
-/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill */
+/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill, arc */
