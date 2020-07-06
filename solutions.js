@@ -47,8 +47,14 @@
 
 
 
+/* Content within slash asterisk and asterisk slash is also a comment, and
+   it can span multiple lines.
+   
+   This "global" comment below is used to tell Glitch that we are using
+   some stuff that is not in this file, so don't warn us that it doesn't
+   exist. */
 
-// global createCanvas
+/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse */
 
 function setup() {
   createCanvas(400, 400);
