@@ -3,32 +3,32 @@
 
 function setup() {
   // Code here runs only once
-  createCanvas(800, 600);
+  createCanvas(600, 200);
 }
 
 function draw() {
-  // Code here runs continuously
-  background("#33cccc");
+  background("white");
   
-  //Sky blue color
-  stroke("#5cd65c");
-  fill("#5cd65c");
-  rect(0, 400, 800, 199);
+  var w = 6;
+  var i = 2;
+  
+  noFill();
+  strokeWeight(w);
+  
+  stroke("#1aa3ff");
+  ellipse(25+w+i,25+w,50,50);
+  
+  stroke("#ffc61a");
+  ellipse(50+w+i,50+w,50,50);
   
   stroke("black");
-  fill("black");
-  //Body
-  ellipse(400, 360, 60, 100);
-  ellipse(400, 300, 50, 50);
-  //Eyes
+  ellipse(75+w+i,25+w,50,50);
   
-  stroke("white");
-  fill("white");
-  //White on body
-  ellipse(400, 350, 35, 80);
-  ellipse(400, 305, 40, 40);
-  //White in eyes
-  */
+  stroke("#ffc61a");
+  ellipse(100+w,50+w,50,50);
+  
+  stroke("#ffc61a");
+  ellipse(125+w,25+w,50,50);
 }
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
