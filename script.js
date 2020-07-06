@@ -54,20 +54,30 @@ function draw() {
   
   
   //Logo
-  var c = "#000000";
-  w = 1;
   strokeWeight(1);
-  stroke(c);
-  fill(c);
   
-  rect(15, 150, 150, 150);
+  stroke("#000000");
+  fill("#000000");
+  //Body base
+  ellipse(200, 300, 200, 200);
+  
+  //Head base
+  ellipse(200, 190, 100, 80);
+  
+  
+  stroke("#FFFFFF");
+  fill("#FFFFFF");
+  //White part of body
+  ellipse(200, 310, 160, 190);
+  
+  
+  stroke("#ffd633");
+  fill("#ffd633");
+  //Feet
+  ellipse(155, 390, 80, 20);
+  ellipse(245, 400, 80, 20);
 }
 
-function update(){
-  strokeWeight(1);
-  stroke(c);
-  fill(c);
-}
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
    it can span multiple lines.
