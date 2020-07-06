@@ -81,9 +81,14 @@ function draw() {
   //Pupils
   stroke("#000000");
   fill("#000000");
-  ellipse(189, 187, 10, 15);
-  ellipse(211, 187, 10, 15);
+  ellipse(190, 188, 10, 15);
+  ellipse(210, 188, 10, 15);
   
+  //Water
+  stroke("#FFFFFF");
+  fill("#FFFFFF");
+  rect(187.5, 181, 3, 3);
+  rect(207.5, 181, 3, 3);
   
   stroke("#ffd633");
   fill("#ffd633");
