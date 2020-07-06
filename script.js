@@ -9,10 +9,20 @@ function setup() {
 function draw() {
   // Code here runs continuously
   background("#33cccc");
-
-  ellipse(100, 100, 50, 50);
-  rect(20, 20, 20, 20);
   
+  stroke("yellow");
+  fill("yellow");
+  ellipse(100, 100, 50, 50);
+  
+  //Sky blue color
+  stroke("#5cd65c");
+  fill("#5cd65c");
+  rect(0, 400, 800, 199);
+  
+  stroke("black");
+  fill("black");
+  ellipse(400, 360, 60, 100);
+  rect(20, 20, 20, 20);
 }
 
 /* Content within slash asterisk and asterisk slash is also a comment, and
@@ -22,4 +32,4 @@ function draw() {
    some stuff that is not in this file, so don't warn us that it doesn't
    exist. */
 
-/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect */
+/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill */
