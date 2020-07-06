@@ -12,7 +12,7 @@ function draw() {
   //Olympic Rings
   var w = 7; //Alters the scaling
   var x = 75; //Sets x position
-  var y = 25; //Sets y position
+  var y = 15; //Sets y position
   var i = 4.5*w/5;
   var r = w*10;
 
@@ -115,4 +115,4 @@ function draw() {
    some stuff that is not in this file, so don't warn us that it doesn't
    exist. */
 
-/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill, arc */
+/* global background, createCanvas, noFill, strokeWeight, stroke, ellipse, rect, fill, arc, heart */
